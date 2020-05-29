@@ -1,0 +1,41 @@
+- 업데이트 한번
+```
+sudo apt-get update
+```
+- 의존성 패키지 설치
+```
+sudo apt install -y libxine2  libqtgui4 libjasper1 libqt4-test libqt4-opengl
+```
+- 댜운로드 릴리즈 download this release file, opencv4.2.0.deb.tar
+```
+wget https://github.com/dltpdn/opencv-for-rpi/releases/download/4.2.0_buster_pi3b/opencv4.2.0.deb.tar
+```
+```
+tar -xvf opencv4.2.0.deb.tar
+```
+```
+sudo apt-get install -y ./OpenCV*.deb
+```
+```
+pkg-config --modversion opencv4
+```
+- 실행 결과
+```
+4.2.0
+```
+- 파이썬을 실행해봅시다
+```
+python3
+```
+```
+import cv2
+```
+위 줄을 입략
+```
+- 아래 명령어가 나옴을 확인
+```
+cv2.__version__
+```
+'4.2.0'
+```
+
