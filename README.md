@@ -1,5 +1,22 @@
 # Raspi4-OpenCV
 
+## 맷플랏 설치
+- 데탑
+```
+pip install matplotlib
+```
+
+
+
+
+
+- 라즈4
+```
+pip3 install matplotlib
+```
+
+
+
 ## 에필로그
 > 참고사이트
 - https://blog.xcoda.net/97 
@@ -25,7 +42,6 @@ make: *** [Makefile:163: all] Error 2
 pi@raspberrypi:~/opencv/opencv-4.1.2/build $ 
 
 ```
-- 으아 씨브랄 설치하느라 힘드러따
 - OpenCV 설치는 크게 두가지 방법으로 나뉨 
   - 하나는, 직접 빌드하는 방법/ 다른하나는 바이너리 파일을 설치하는 방법으로
   - 라즈베리파이4로 나오면서, 변경점이 조금 있어서 직접 빌드하는 방법은 현제 문제가 있음
@@ -54,7 +70,7 @@ tar -xvf opencv4.2.0.deb.tar
 ```
 sudo apt-get install -y ./OpenCV*.deb
 ```
-- 
+- 버전확인
 ```
 pkg-config --modversion opencv4
 ```
@@ -73,4 +89,21 @@ cv2.__version__
 - 위 줄을 입략햐 아래 명령어가 나옴을 확인
 - '4.2.0'
 
-
+```
+OpenCV의 이미지 기본
+기술 요구 사항
+이미지 기본에 대한 이론적 소개
+이미지 처리의 주요 문제
+이미지 처리 단계
+이미지 공식
+픽셀, 색상, 채널, 이미지 및 색상 공간의 개념
+파일 확장자
+OpenCV의 좌표계
+OpenCV에서 픽셀 액세스 및 조작
+BGR 이미지를 사용하여 OpenCV에서 픽셀 액세스 및 조작
+그레이 스케일 이미지로 OpenCV에서 픽셀 액세스 및 조작
+OpenCV의 BGR 주문
+요약
+질문
+추가 자료
+```
